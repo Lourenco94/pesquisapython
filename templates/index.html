@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Tech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="jornal">
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>FOLHA TECNOLOGIA</h1>
+        <p>São Paulo, 2026</p>
+    </header>
+
+    <!-- Manchete -->
+    <section class="manchete">
+        <h2>Python cresce no mercado e se torna essencial na tecnologia</h2>
+        <p class="sub">Linguagem domina áreas como desenvolvimento web, IA e análise de dados</p>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <section class="conteudo">
+
+        <!-- Coluna esquerda -->
+        <div class="coluna">
+            <h3>O que é Python?</h3>
+            <p>Python é uma linguagem de programação de alto nível criada em 1991. Seu foco está na simplicidade e legibilidade, permitindo que desenvolvedores criem soluções de forma rápida e eficiente.</p>
+
+            <h3>Para que serve?</h3>
+            <p>Python é amplamente utilizado no desenvolvimento web, inteligência artificial, análise de dados, automação de tarefas e até na criação de jogos digitais.</p>
+        </div>
+
+        <!-- Coluna central (com imagem) -->
+        <div class="coluna centro">
+            <p class="legenda">Python vem sendo adotado por empresas no mundo todo</p>
+
+            <h3>Vantagens no mercado</h3>
+            <p>Entre seus principais benefícios estão a facilidade de aprendizado, alta produtividade e uma comunidade ativa que contribui constantemente com melhorias.</p>
+        </div>
+
+        <!-- Coluna direita -->
+        <div class="coluna">
+            <h3>O que é POO?</h3>
+            <p>A Programação Orientada a Objetos organiza o código em objetos, representando elementos do mundo real dentro do sistema.</p>
+
+            <h3>Vantagens da POO</h3>
+            <p>A POO permite maior organização, reutilização de código, facilidade na manutenção e escalabilidade dos sistemas.</p>
+        </div>
+
+    </section>
+
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo tipo papel */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #e9e4d8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Jornal */
+.jornal {
+    background: #fffdf7;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    border-bottom: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 0.9rem;
+}
+
+/* Manchete */
+.manchete {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.manchete h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sub {
+    font-style: italic;
+    color: #555;
+}
+
+/* Layout em colunas */
+.conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+/* Cada coluna */
+.coluna {
+    flex: 1;
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Títulos internos */
+.coluna h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* Imagem */
+.centro img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Legenda */
+.legenda {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
+}
+    </style>
+</div>
+
+</body>
+</html>
